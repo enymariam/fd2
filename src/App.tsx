@@ -5,7 +5,14 @@ import Card from "./components/Card";
 const App: React.FC = () => {
     return (
         <Container maxWidth="lg" sx={{ paddingTop: 4 }}>
-            <Typography variant="h1" sx={{ marginBottom: 2 }}>
+            <Typography
+                variant="h1"
+                sx={{
+                    marginBottom: 4,
+                    fontSize: { xs: "2rem", sm: "3rem", md: "4rem" },
+                    textAlign: "center",
+                }}
+            >
                 Sentimental Analysis App{" "}
             </Typography>
             <Card></Card>
