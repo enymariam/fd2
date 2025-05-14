@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import PositiveCard from "./components/PositiveCard";
 import NegativeCard from "./components/NegativeCard";
 
@@ -16,8 +16,18 @@ const App: React.FC = () => {
             >
                 Sentiments{" "}
             </Typography>
-            <PositiveCard></PositiveCard>
-            <NegativeCard></NegativeCard>
+            <Box
+                sx={{
+                    display: "grid",
+                    gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" },
+                    gap: 4,
+                    justifyContent: "center",
+                    alignItems: "center",
+                }}
+            >
+                <PositiveCard />
+                <NegativeCard />
+            </Box>
         </Container>
     );
 };
