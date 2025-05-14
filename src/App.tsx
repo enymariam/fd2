@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Typography } from "@mui/material";
-import Card from "./components/Card";
+import PositiveCard from "./components/PositiveCard";
+import NegativeCard from "./components/NegativeCard";
 
 const App: React.FC = () => {
     return (
@@ -13,9 +14,10 @@ const App: React.FC = () => {
                     textAlign: "center",
                 }}
             >
-                Sentimental Analysis App{" "}
+                Sentiments{" "}
             </Typography>
-            <Card></Card>
+            <PositiveCard></PositiveCard>
+            <NegativeCard></NegativeCard>
         </Container>
     );
 };

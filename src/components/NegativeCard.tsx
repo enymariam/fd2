@@ -7,15 +7,17 @@ export default function ActionAreaCard() {
             sx={{
                 maxWidth: 345,
                 margin: "auto",
-                backgroundColor: "#f5f5f5",
+                color: "text.primary",
+                backgroundColor: "#E55050",
+                marginBlock: 2,
             }}
         >
             <CardContent>
                 <Typography variant="h5" component="div">
-                    Analyysi
+                    Negative
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                    Käynnistä sentimenttianalyysi ja tarkastele tuloksia.
+                <Typography variant="body2" color="text.primary">
+                    "I did not enjoy this"
                 </Typography>
             </CardContent>
         </Card>
