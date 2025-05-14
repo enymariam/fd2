@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("näyttää sovelluksen otsikon", () => {
+test("Display the app title", () => {
     render(<App />);
-    const otsikko = screen.getByText(/Sentimental Analysis App/i);
-    expect(otsikko).toBeInTheDocument();
+    const title = screen.getByText(/Sentiments/i);
+    expect(title).toBeInTheDocument();
 });
