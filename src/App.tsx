@@ -23,6 +23,9 @@ const App: React.FC = () => {
                     gap: 4,
                     justifyContent: "center",
                     alignItems: "center",
+                    maxWidth: 800,
+                    width: "100%",
+                    margin: "auto",
                 }}
             >
                 <PositiveCard />

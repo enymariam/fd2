@@ -5,7 +5,7 @@ export default function NegativeCard() {
     return (
         <Card
             sx={{
-                maxWidth: 345,
+                maxWidth: 400,
                 width: "100%",
                 margin: "auto",
                 color: "text.primary",
